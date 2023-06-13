@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 class HelloTest {
 
   @Test
-  void shouldReturn() {
+  void shouldReturnExpectedMessage() {
     Hello hello = new Hello();
     assertEquals("Hello world", hello.greetings());
   }
