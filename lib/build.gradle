@@ -1,0 +1,23 @@
+plugins {
+    id 'java-library'
+}
+
+repositories {
+    mavenCentral()
+}
+
+def jupiter= '5.9.3'
+
+dependencies {
+
+    testImplementation group : 'org.junit.jupiter', name : 'junit-jupiter', version: "${jupiter}"
+    testImplementation  group : 'org.junit.jupiter', name : 'junit-jupiter-api', version: "${jupiter}"
+    testImplementation   group : 'org.junit.jupiter', name : 'junit-jupiter-params', version: "${jupiter}"
+    testImplementation  group : 'org.junit.jupiter', name : 'junit-jupiter-engine', version: "${jupiter}"
+}
+
+test {
+    useJUnitPlatform {}
+
+
+}
